@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+    background: linear-gradient(to bottom, #ada9eb, #ffffff);
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#hero {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #b2a4ff; /* Adjust color */
+    color: black;
+}
+#work-expereince{
+    height: 100vh;
+}
+
+
+/* About Section */
+#about {
+    min-height: 100vh; /* At least full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4c3ff; /* Adjust color */
+    padding: 50px;
+}
+.logo {
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+}
+
+.hero-content {
+    margin-top: 30px;
+}
+.hero-content h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.hero-content p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.image {
+    width: 160px; /* Adjust as needed */
+    max-width: 450px; /* Keep it in proportion */
+    object-fit: cover;
+    background: none; /* Ensure no background */
+}
+
+.btn {
+    background: #6a5acd;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #5848c2;
+}
+.menu-toggle {
+    display: none;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    font-size: 20px;
+}
+.image{
+    width: 300px; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it remains responsive */
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+.visit-work-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #6a5acd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.visit-work-btn:hover {
+    background: #483d8b;
+}
+.download-cv-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #483d8b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.download-cv-btn:hover {
+    background: #483d8b;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.portfolio-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+#work-experience {
+    padding: 40px;
+}
+
+.work-experience h2 {
+    color: #707070;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.work-experience h1 {
+    font-size: 28px;
+    color: #6a5acd;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.experience-card h3 {
+    font-size: 18px;
+    color: #6a5acd;
+    font-weight: bold;
+}
+
+.company, .duration {
+    font-size: 14px;
+    color: #555;
+}
+
+h4 {
+    font-size: 16px;
+    color: #6a5acd;
+    margin-top: 10px;
+}
+
+.content {
+    list-style: none;
+    padding: 0;
+}
+
+.content li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.read-more-btn {
+    background: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background: #5848c2;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    padding: 80px 20px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech {
+    color: purple;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#leadership {
+    padding: 40px;
+    height: 100vh;
+    
+}
+
+#leadership h2 {
+    font-size: 28px;
+    color: #6a5acd;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 200px;
+    padding:  20px;
+    margin-top: 60px;
+    height: 70vh;
+}
+ul{
+    list-style-type: none;
+}
+.skill-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Different Color Themes */
+.orange { border-top: 25px solid orange; }
+.blue { border-top: 25px solid #007BFF; }
+.red { border-top: 25px solid red; }
+.black { border-top: 25px solid black; color: black; }
+.dark { border-top: 25px solid grey; color: black;  }
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 14px;
+}
+
+/* Hover Effect */
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+#certificates{
+    height: 100vh;
+}
