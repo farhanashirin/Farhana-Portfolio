@@ -6,21 +6,28 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./Styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="logo">FS</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work-expereince">Work Expereince</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <!-- <li><a href="#certificates">Certificates</a></li> -->
-                <li><a href="#leadership">Leadership and Achievements</a></li>
-            </ul>
-            <div class="menu-toggle">&#9776;</div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#hero">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#work-expereince">Experience</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#leadership">Leadership and Achievements</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <section id="hero">
@@ -28,13 +35,23 @@
             <h2>Hello, I'm</h2>
             <h1>Farhana Shirin KT</h1>
             <p>Full-Stack Developer</p>
-            <a href="https://github.com/farhanashirin" target="_blank" class="visit-work-btn">
-                Visit My Work
-            </a>
-            
+            <a href="https://github.com/farhanashirin" class="btn" target="_blank">View My Work</a>
         </div>
     </section>
     <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <h1>Who Am I?</h1>
+        </div>
+        <div class="about-content">
+            <img src="images/farhana.png" alt="Farhana Shirin" class="image">
+            <div class="about-text">
+                <p>I'm a passionate software developer with 1 years of experience building responsive web applications using MongoDB,Express JS, React Js,  Node.js. I love crafting clean, efficient code and enjoy solving complex problems through collaboration and innovation. Always staying up-to-date with the latest web technologies, I thrive in fast-paced environments where I can contribute to both front-end and back-end development. When I'm not coding, you'll find me exploring new tech trends or working on personal projects.</p>
+                <a href="https://drive.google.com/file/d/1nyVaiFsK5P6ryBtwtgKLtqfp0PQsDp2J/view?usp=drive_link" class="btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="about">
         <div class="about-content">
             <img class="image" src="./images/farhana.png" alt="Farha Thasni M">
             <div class="about-text">
@@ -47,9 +64,58 @@
                 
             </div>
         </div>
-    </section> 
+    </section>  -->
    
     <section id="work-expereince">
+        <div class="section-header">
+            <h2>Professional Journey</h2>
+            <h1>Work Experience</h1>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Mern Stack Developement Intern</h3>
+                <p class="company">Luminar Technolab, Kerala, India</p>
+                <p class="duration">Duration: July 2024 - january 2025</p>
+                <h4>Key Responsibilities:</h4>
+                <ul class="content">
+                    <li>Engineered responsive web applications using React.js.</li>
+                    <li>Developed and optimized server-side applications with Node.js and Express.js.</li>
+                    <li>Designed and managed databases and backend services via MongoDB.</li>
+                    
+                    <li>Enhanced application speed and scalability.</li>
+                </ul>
+            
+            </div>
+
+            <div class="experience-card">
+                <h3>Software Development Intern (HTML, CSS, Javascript) </h3>
+                <p class="company">Ardent Computect Pvt. Ltd, Coimbatoore, India</p>
+                <p class="duration">Duration: September 2023 - January 2024</p>
+                <h4>Key Responsibilities:</h4>
+                <ul class="content">
+                    <li>Developed web applications using HTML and Javascript</li>
+                    <li>Implemented styling with Bootstrap and  CSS for efficient design workflows.</li>
+                    <li>Integrated Firebase for real-time backend services.</li>
+                </ul>
+                
+            </div>
+
+            <div class="experience-card">
+                <h3>Program Executive</h3>
+                <p class="company">STEYP, Kerala, India</p>
+                <p class="duration">Duration: February 2023 - September 2023</p>
+                <h4>Key Responsibilities:</h4>
+                <ul class="content">
+                    <li>Oversee and manage the smooth execution of the program.</li>
+                    <li>Ensure that all participants from various wards are properly onboarded.</li>
+                    <li>Coordinate with stakeholders, including students, mentors, and sponsors.</li>
+                </ul>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="work-expereince">
         <h2>Where Have I Worked?</h2>
         <h1>Work Experience</h1>
 
@@ -95,9 +161,9 @@
               
             </div>
         </div>
-    </section>
-<h1>Projects</h1>
-    <section id="projects">
+    </section> -->
+
+    <!-- <section id="projects">
 
         <div class="project-card">
             <h2>Classroom Application</h2>
@@ -134,9 +200,46 @@
             <p>A simple and interactive BMI (Body Mass Index) Calculator that helps users determine their BMI based on height and Weight. The app categorizes the BMI result. </p>
             <span class="tech">Technologies:Javscript, HTML, CSS, Bootstrap</span>
         </div>
+    </section> -->
+    <section id="projects">
+        <div class="section-header">
+            <h1>Featured Projects</h1>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h2>E-Cart Application</h2>
+                <p>Created  a E-commerce Application System at Which User Can See Products, Cart, and Wishlist System to automate appointment scheduling...</p>
+                <span class="tech">Technologies: React Js, Redux</span>
+            </div>
+    
+            <div class="project-card">
+                <h2>Media Player Application</h2>
+                <p>Enginnered an App that Allows Users to Add, Delete, and Categorize YouTube Videos</p>
+                <span class="tech">Technologies: React Js, JSON Server</span>
+            </div>
+    
+            <div class="project-card">
+                <h2>Personal PortFolio</h2>
+                <p>Designed and developed a personal portfolio website, highlighting projects, capabilities, and achievements with a focus on user experience and accessibility</p>
+                <span class="tech">Technologies:Javscript, HTML, CSS</span>
+            </div>
+    
+            <div class="project-card">
+                <h2>Bank App</h2>
+                <p>Built an Interactive banking web application that allows users to manage their accounts efficiently. The app enables users to deposit and withdraw money, check their balance in real-time, and view transaction history</p>
+                <span class="tech">Technologies:Javscript, HTML, CSS, BootStrap</span>
+            </div>
+    
+            <div class="project-card">
+                <h2>BMI Calculator</h2>
+                <p>A simple and interactive BMI (Body Mass Index) Calculator that helps users determine their BMI based on height and Weight. The app categorizes the BMI result. </p>
+                <span class="tech">Technologies:Javscript, HTML, CSS, Bootstrap</span>
+            </div>
+        </div>
     </section>
-    <h1>Skills</h1>
-    <section id="skills">
+
+    <!-- <h1>Skills</h1> -->
+    <!-- <section id="skills">
         <div class="skill-card orange">
             <h2>Tools & Frameworks</h2>
             <ul>
@@ -181,6 +284,49 @@
                 <li>Collaboration Tools</li>
             </ul>
         </div> -->
+    </section> -->
+
+    <section id="skills">
+        <div class="section-header">
+            <h1>Technical Skills</h1>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card ">
+                <h2>Tools & Frameworks</h2>
+                <ul>
+                    <li>MERN Stack</li>
+                    <li>DBMS</li>
+                    <li>SQL</li>
+                    <li>PowerPoint</li>
+                    
+                </ul>
+            </div>
+            <div class="skill-card ">
+                <h2>Other Skills</h2>
+                <ul>
+                    <li>Responsive Web Design</li>
+                    <li>Performance Optimization</li>
+                    <li>Code Reviews</li>
+                    <li>Cross-functional Team Collaboration</li>
+                </ul>
+            </div>
+    
+            <div class="skill-card ">
+                <h2>Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+    
+            <div class="skill-card ">
+                <h2>Testing & Debugging</h2>
+                <ul>
+                    <li>Postman</li>
+                   
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- <section id="certificates">
@@ -197,10 +343,14 @@
             <a href="certificates/national_level_camp.pdf" target="_blank" class="portfolio-item">National Level Camp - NSS</a>
         </div>
     </section> -->
+   
     <section id="leadership">
-        <h2>Leadership & Achievements</h2>
-
+        
+<div class="section-header">
+    <h1>Leadership and Achievements</h1>
+</div>
         <div class="grid-container">
+           
             <div class="grid-item">
                 <h3>Blood Donation Wing Vice President</h3>
                 <p>Conducted and Coordinated diffreent blood donation camps among students and publics</p>
